@@ -1,0 +1,1073 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "history_visible": true,
+      "authorship_tag": "ABX9TyOYHpo0EQzKurFj/NLJSFHY",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/edilsomdecampos/Ola-Mundo/blob/main/aula2%20l%C3%B3gica%20de%20programa%C3%A7%C3%A3o%20e%20algoritimos\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "Uq_bqgk31A0L"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2. O CICLO DE PROCESSAMENTO DE DADOS\n",
+        "   \n",
+        "   O Primeiro Programa!\n"
+      ],
+      "metadata": {
+        "id": "W9KmT48h3yg2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print('Olá, mundo!')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4lp0MTZ_4aDY",
+        "outputId": "32c881cf-3507-4a01-a1c2-ea3a96358952"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá, mundo!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "   Função de Saída\n",
+        "   Podemos usar aspas duplas: mas a comunidade Python usa mais as aspas simples EX:"
+      ],
+      "metadata": {
+        "id": "lxl5GVFU6oR2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Olá, mundo!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CcQRHLNW7RE9",
+        "outputId": "1ae2b24a-0b01-48fb-ffba-cd9cb091aed6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá, mundo!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " Operação Aritiméticas:"
+      ],
+      "metadata": {
+        "id": "CTtPsM4a7ocw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(2 + 3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Gsbc32vg73Ig",
+        "outputId": "ede6a875-6741-4e4a-dedf-ed65ad4f5ee1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " O que acontece aqui?"
+      ],
+      "metadata": {
+        "id": "aofX2uma8PHA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print('2 + 3')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "innte3uS8cZn",
+        "outputId": "162a2265-0072-47c8-de68-d79907fcada0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2 + 3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "por causa das aspas ele não vai somar mas sim imprimir 2 + 3"
+      ],
+      "metadata": {
+        "id": "1i-wyxGA9RO0"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " E aqui acontece uma concatenção."
+      ],
+      "metadata": {
+        "id": "6M_X3qVt8yVn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print('2' + '3')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0_WWbhTg88xl",
+        "outputId": "93e7e6f3-ca96-4559-d177-cd55d68bec47"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "23\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Concatenando mensagens:"
+      ],
+      "metadata": {
+        "id": "TLibLWEJ94Oj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print('Olá,'+ 'mundo')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1iNM5976-EYk",
+        "outputId": "76c4b9b1-7082-4385-ad2f-634b31021f44"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá,mundo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print('Olá,', 'mundo!')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "m1_WC8iW-ZZu",
+        "outputId": "e008ca63-37cf-4abb-a531-e2ac467e2106"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá, mundo!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Conectando mensagens e números:"
+      ],
+      "metadata": {
+        "id": "OhUzIIZt-8fq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print('O resultado da soma de 2 + 3 é:',2 + 3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MLEQQh9U_L-b",
+        "outputId": "103e8856-524e-4e3a-c0e8-a9b8dcab0ebe"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "O resultado da soma de 2 + 3 é: 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " Operadores e operações matemáticas"
+      ],
+      "metadata": {
+        "id": "eYPm5oAAAV_1"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(10*(5 + 7)/4)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eldDs3jKAjdf",
+        "outputId": "05aaf1e6-a850-4f24-e547-44b9c7897ca4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "30.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Cuidado!!"
+      ],
+      "metadata": {
+        "id": "msRsvZprA7tE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(10*(5 + 7 /4))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-VifefvUBGY4",
+        "outputId": "1ab92d7a-fc54-4300-9641-5117847a8aff"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "67.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3. VARIÁVEIS DADOS E SEUS TIPOS"
+      ],
+      "metadata": {
+        "id": "huVEH1-kDDFS"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota = 8.5\n",
+        "disciplina ='Logica de Programação e Algoritimos'\n",
+        "print(nota)\n",
+        "print(disciplina)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8oAMcFZTDYHI",
+        "outputId": "972da6bc-4499-4093-82b0-d66143adb10f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8.5\n",
+            "Logica de Programação e Algoritimos\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print('Disciplina: ', disciplina,'Nota:', nota)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-9J8QI06EWA_",
+        "outputId": "f924d8ad-4374-4e77-e91c-42f4fa216f61"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Disciplina:  Logica de Programação e Algoritimos Nota: 8.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Variável lógica"
+      ],
+      "metadata": {
+        "id": "pjRGHAroE4A0"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 1 #a recebe 1\n",
+        "b = 5 #b recebe 5\n",
+        "resposta = a == b\n",
+        "print(resposta)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iCNgg4NGGYZg",
+        "outputId": "81df630c-cf7a-466d-8a15-c43e7f9213b6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 1 #a recebe 1\n",
+        "b = 5 #b recebe 5\n",
+        "resposts = a != b\n",
+        "print(resposta)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "l-nsR9NYHk_Z",
+        "outputId": "f471d196-cea5-437a-a02a-0039f9ac27a0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Variável string"
+      ],
+      "metadata": {
+        "id": "Fw-DYfCYLFGT"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "frase = 'Olá, mundo!'\n",
+        "print(frase)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ugt1yfCTLOHX",
+        "outputId": "34759a4c-7cce-4397-908b-d5654e49a9bd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá, mundo!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Acessando o índice:"
+      ],
+      "metadata": {
+        "id": "DproptweLinr"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Agora quero que apareca apenas a letra O"
+      ],
+      "metadata": {
+        "id": "DShFzMa3L2qK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(frase[0])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KWDMYv_5L-c2",
+        "outputId": "e72115a8-b54d-44fc-8a4d-91feeeac38c6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "O\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "aprenta a letra á letra O=0, letra l=1, letra á=2"
+      ],
+      "metadata": {
+        "id": "2RRYNZAiMtI6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(frase[2])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-NDTO9ljNIA2",
+        "outputId": "b28a5927-dd9c-4b2f-f3e1-150bc079c019"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "á\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Concatenação"
+      ],
+      "metadata": {
+        "id": "rKhnCCnVOCRI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s1 = 'Lógica de Programação'\n",
+        "s1 = s1 + ' e Algoritimos'\n",
+        "print(s1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "r1dLag7COF7v",
+        "outputId": "e0acce47-bebe-416b-bf71-3b126eebd7fd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Lógica de Programação e Algoritimos\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Re´petindo strings na concatenação"
+      ],
+      "metadata": {
+        "id": "rdlwgrIJOown"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s1 = 'A' + '-' * 10 + 'B'\n",
+        "print(s1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ymnuLQ_SOztR",
+        "outputId": "339b8ca4-f5e8-42c9-b4f8-54933c690de4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A----------B\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Composição"
+      ],
+      "metadata": {
+        "id": "GYeAweXDPgcK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota = 8.5\n",
+        "s1 = 'Você tirou %f na disciplina de Algoritimo' % nota\n",
+        "print(s1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tMjhD_YHPj-g",
+        "outputId": "7ff41877-900b-4fdd-b96a-a625c449b205"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Você tirou 8.500000 na disciplina de Algoritimo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "limitando a casa decimal"
+      ],
+      "metadata": {
+        "id": "3lCxj3mQTrVk"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota = 8.5\n",
+        "s1 = ' Você tirou %.2f na disciplina de Algoritimo' % nota\n",
+        "print(s1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CtsnvUizT2X1",
+        "outputId": "5f5cb30b-aedf-4556-a013-f586c8122844"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " Você tirou 8.50 na disciplina de Algoritimo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " Varias variaveis:"
+      ],
+      "metadata": {
+        "id": "VROjUJuuU6Re"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota = 8.5\n",
+        "disciplina = 'Algoritimos'\n",
+        "s1 = ' Você tirou %.2f na disciplina de %s' %(nota, disciplina)\n",
+        "print(s1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6PdPPNqbVRes",
+        "outputId": "70e76ece-b7bb-4f32-f060-f875ed76374e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " Você tirou 8.50 na disciplina de Algoritimos\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Composição mais moderna:"
+      ],
+      "metadata": {
+        "id": "ItroWesYWHcM"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota = 8.5\n",
+        "disciplina = ' Agoritimos'\n",
+        "s1 = ' Você tirou {} na disciplina de {}'.format(nota, disciplina)\n",
+        "print(s1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TkUMOz09WTxf",
+        "outputId": "e18e8ceb-b02c-46be-8f58-87409d02851f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " Você tirou 8.5 na disciplina de  Agoritimos\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " Fatiamento: podemos pegar do caractere 0 ao caractere 5,( lembrando que começa do 0 que é a primeira letra"
+      ],
+      "metadata": {
+        "id": "OD8Lv4_JXklz"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s1 = 'Lógica de Programação e Algoritimos'\n",
+        "print(s1[0:6])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AMadlcCsYH3q",
+        "outputId": "f40f1764-7716-410b-e50f-83ba0f12e3bc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Lógica\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s1 = 'Lógica de Programação e Algoritimos'\n",
+        "print(s1[24:34])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MbqR5E08YpEW",
+        "outputId": "355f1a26-f0bd-4fe7-9a27-5846dba84e2a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Algoritimo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s1 = 'Lógica de programação e Algoritimo'\n",
+        "print(s1[:6])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ojv-3PVuZQNc",
+        "outputId": "2a8af35f-99b7-4859-ad5f-724999f24422"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Lógica\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "tamanho:"
+      ],
+      "metadata": {
+        "id": "mTXrlIFWZlIl"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s1 = 'Lógica de Programação e Algoritimo'\n",
+        "tamanho = len(s1)\n",
+        "print(tamanho)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4n2XUSSuZnpF",
+        "outputId": "37cdce98-3f20-4c54-c170-192a8f7bd7e5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "34\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "5.FUNÇÃO DE ENTRADA E FLUXO DE EXECUÇÃO DO PROGRAMA\n",
+        "Função de entrada:"
+      ],
+      "metadata": {
+        "id": "UcLr-3Iia9_J"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "idade = input('Qual a sua idade?')\n",
+        "print(idade)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Oqvv9W42bVn9",
+        "outputId": "db1f06d2-a8f9-4b27-8ec7-87afc4ad708d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Qual a sua idade?54\n",
+            "54\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nome = input('Qual é o seu nome')\n",
+        "print('Olá {}, seja bem-vindo!'.format(nome))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lZu-ed51bnwT",
+        "outputId": "406a58d5-99e9-44d1-d022-48034e903b52"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Qual é o seu nomeEdilson\n",
+            "Olá Edilson, seja bem-vindo!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Convertendo dados de entrada"
+      ],
+      "metadata": {
+        "id": "34VzY6xFcbKg"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota = float(input('Qual nota você recebeu na disciplina?'))\n",
+        "print('Você tirou nota {}.'.format(nota))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TpJ57diBclCv",
+        "outputId": "180abeca-88a2-4ce0-d8aa-35eb9fbd80aa"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Qual nota você recebeu na disciplina?8.9\n",
+            "Você tirou nota 8.9.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercício:\n",
+        "\n",
+        "Deesenvolva um algoritimo que solicite ao usuário dois números inteiros. Imprima a soma destes dois números na tela."
+      ],
+      "metadata": {
+        "id": "l4XJ_Z1Rd5nu"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Exercício 2.1\n",
+        "x = int(input('digite um número inteiro:'))\n",
+        "y = int(input('digite outro numero inteiro:'))\n",
+        "# Maneira clássica\n",
+        "res = 'O resultado da soma de %i com %i é %i.' % (x, y, x + y)\n",
+        "print(res)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KyHy0_skeWFg",
+        "outputId": "b224d0ef-e5e5-465b-cb6b-829cd510c1c4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um número inteiro:5\n",
+            "digite outro numero inteiro:7\n",
+            "O resultado da soma de 5 com 7 é 12.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Maneira moderna\n",
+        "x = int(input('digite um número inteiro:'))\n",
+        "y = int(input('digite outro numero inteiro:'))\n",
+        "res = 'O resultado da soma de {} com {} é {}.'.format(x, y, x + y)\n",
+        "print(res)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_Em-bLe8g4G_",
+        "outputId": "ae3a5ca4-ac1b-4219-9047-d6dafcb569a0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um número inteiro:5\n",
+            "digite outro numero inteiro:7\n",
+            "O resultado da soma de 5 com 7 é 12.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
